@@ -2,6 +2,7 @@ const Search=()=>{
     return(
        <>
        <div>
+        hello
             <input type="text" placeholder="search" onKeyDown={e => {
                 if (e.key == "Enter") {
                     console.log("pressed enter key");
