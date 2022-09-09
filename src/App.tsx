@@ -7,14 +7,22 @@ import Library from "./Components/Screens/Library";
 
 function App() {
   return (
+    <div className="container">
+      
     <BrowserRouter>
       <Sidebar/>
+      <div className="main">
       <Routes>
+      
         <Route path="/"  element={<Home />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Library" element={<Library />} />
+       
       </Routes>
+      </div>
     </BrowserRouter>
+    
+    </div>
   );
 }
 

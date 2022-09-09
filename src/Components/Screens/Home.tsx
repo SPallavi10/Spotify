@@ -1,8 +1,13 @@
+
 const Home=()=>{
+    console.log("This is a Home Page task");
     return(
-       <div>
+     <>
+        
         This is a Home Page task
-       </div> 
+        </>
+       
     )
+    
 }
 export default Home;

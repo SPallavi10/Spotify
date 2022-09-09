@@ -1,10 +1,11 @@
+
 const Search=()=>{
     return(
        <>
        <div>
-        hello
-            <input type="text" placeholder="search" onKeyDown={e => {
-                if (e.key == "Enter") {
+        
+            <input type="text" placeholder="search" width="10%" onKeyDown={e => {
+                if (e.key === "Enter") {
                     console.log("pressed enter key");
                 }
             } } />
@@ -14,6 +15,8 @@ const Search=()=>{
                 } }>
                     Search
                 </button>
+                
+                
             </div>
             </> 
     )

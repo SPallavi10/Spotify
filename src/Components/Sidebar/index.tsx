@@ -1,50 +1,21 @@
 import {FaHome} from 'react-icons/fa';
 import {FaSearch} from 'react-icons/fa';
 import {FaMusic} from "react-icons/fa";
-import {Link } from 'react-router-dom';
+import Logo from '../../assets/images/logo.png'
+import {ImageLogo, Navbar,NavbarLink,OpenLink} from './styled'
 const Sidebar=()=>{
-    
-            const menuItem=[
-                {
-                    path: "/",
-                    name: "Home",
-                    icon: <FaHome/>
-
-                },
-                {
-                    path: "/Search",
-                    name: "Search",
-                    icon: <FaSearch/>
-                
-                },
-                {
-                    path: "/Library",
-                    name: "Library",
-                    icon: <FaMusic/>
-                                    
-                }   
-            ]
             return(
-                <><div>
-                    <ul>
-                    {
-                    menuItem.map((item, index)=>{
-
-                    return(
-                        <li>
-
-                    <Link to={item.path}> 
-                    {item.icon}
-                    <span>{item.name}</span>
-                        </Link>
-                        </li>
-                    );
-                    })
-                }
-                </ul>
-                </div>
-               
-                </>
-    )
+                 <Navbar>
+                    
+                    <ImageLogo
+                     src={Logo} />
+                        {/* <OpenLink>&#8801;</OpenLink> */}
+                    <NavbarLink to="/"><FaHome/>Home</NavbarLink>
+                    <NavbarLink to="/Search"><FaSearch/>Search</NavbarLink>
+                    <NavbarLink to="/Library"><FaMusic/>Library</NavbarLink>
+                    
+                    </Navbar>
+                   
+                    )
 }
 export default Sidebar;
