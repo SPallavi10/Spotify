@@ -4,6 +4,7 @@ import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Screens/Home";
 import Search from "./Components/Screens/Search";
 import Library from "./Components/Screens/Library";
+import Redirect from "./Components/Redirect";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/"  element={<Home />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Library" element={<Library />} />
-       
+        <Route path="/Redirect" element={<Redirect />} />
       </Routes>
       </div>
     </BrowserRouter>
